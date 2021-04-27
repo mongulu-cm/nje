@@ -1,4 +1,6 @@
-# website
+# njɛ̀
+> Langue [Baka](https://fr.wikipedia.org/wiki/Baka_(langue_oubanguienne)) siginifiant trace d'un éclair dans le ciel
+
 Site web du collectif mongulu: https://www.mongulu.cm/ ou http://mongulu.cm/
 
 
