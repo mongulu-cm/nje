@@ -30,26 +30,37 @@
       "name": "Collectif MONGULU",
       "url": "https://www.mongulu.cm/",
       "logo": "https://www.mongulu.cm/logo.jpeg",
-      "areaServed": "http://yago-knowledge.org/resource/France",
-      "brand": "https://github.com/mongulu-cm",
-      "sameAs": [
-        "https://github.com/mongulu-cm",
-        "https://peertube.stream/c/mongulu/videos"
-      ],
-      "knowsAbout":[
-        "http://yago-knowledge.org/resource/Cameroun",
-        "http://www.wikidata.org/wiki/Q21198"
-      ],
-      "Action": [
+      "areaServed" : {
+          "@type" : "Place",
+          "name" : "France",
+          "sameAs": "https://yago-knowledge.org/resource/France"
+      },
+      "brand": {
+          "@type" : "Organization",
+          "sameAs": "https://github.com/mongulu-cm"
+      },
+      "funder": [
         {
-          "@type": "CreateAction",
-          "object": "http://fr.dbpedia.org/page/Logiciel_libre"
+          "@type": "Person",
+          "name": "Bill Metangmo",
+          "sameAs": "https://github.com/billmetangmo"
         },
         {
-          "@type": "ShareAction",
-          "recipient": "http://www.wikidata.org/wiki/Q60849700"
+          "@type": "Person",
+          "name": "Fabiola Tagne",
+          "sameAs": "https://github.com/fabiolatagne97"
         }
-     ]
+      ],
+      "sameAs": [
+        "https://peertube.stream/c/mongulu/videos"
+      ],
+      "email": "mongulu@framalistes.org",
+      "knowsAbout":[
+        "http://yago-knowledge.org/resource/Cameroun",
+        "http://www.wikidata.org/wiki/Q21198",
+        "http://fr.dbpedia.org/page/Logiciel_libre",
+        "http://www.wikidata.org/wiki/Q60849700"
+      ]
     }
 </script>
   <!-- <embed src=charte_du_collectif.pdf width=800 height=800 type='application/pdf'/> -->
