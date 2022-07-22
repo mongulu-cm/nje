@@ -2,23 +2,23 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-> Langue [Baka](https://fr.wikipedia.org/wiki/Baka_(langue_oubanguienne)) siginifiant trace d'un éclair dans le ciel
+> [Baka](https://fr.wikipedia.org/wiki/Baka_(langue_oubanguienne)) language meaning a trace of lightning in the sky
 
-Site web du collectif mongulu: https://www.mongulu.cm/ ou http://mongulu.cm/
+Website of the mongulu collective: https://www.mongulu.cm/ ou http://mongulu.cm/
 
 
-### Prérequis
-Vous devez avoir un minimum de compétence sur le cloud AWS
+### Prerequisites
+You must have a minimum of competence on the AWS cloud
 
-Sur le cloud AWS:
-* Avoir enregistré votre domaine xxxx.yyy ainsi que le sous-domaine www.xxxx.yyy dans Route 53
-* Disposez d'un website bucket www.xxxx.yyy dans S3
-* Un enregistrement DNS dans Route 53 reliant le domaine xxxx.yyyy au sous-domaine www.xxxx.yyy  
+On the AWS cloud:
+* Have registered your domain xxxx.yyy as well as the subdomain www.xxxx.yyy in Route 53
+* Have a website bucket www.xxxx.yyy in S3
+* A DNS record in Route 53 linking domain xxxx.yyyy to subdomain www.xxxx.yyy  
 
-Sur votre poste : 
+On your computer: 
 * aws-cli
 * git 
-* Un fork de ce ce projet
+* A fork of this project
 
 
 ### Déploiement
