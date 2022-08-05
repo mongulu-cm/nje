@@ -1,7 +1,7 @@
 # njɛ̀
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 > [Baka](https://fr.wikipedia.org/wiki/Baka_(langue_oubanguienne)) language meaning a trace of lightning in the sky
 
 Website of the mongulu collective: https://www.mongulu.cm/ ou http://mongulu.cm/
