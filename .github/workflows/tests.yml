@@ -1,11 +1,10 @@
 name: Tests
 on: [pull_request, push]
-
 jobs:
   commitlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # ratchet:actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v5
+      - uses: wagoid/commitlint-github-action@4caf21aed4a778f940d0b17eb109942ef167bb27 # ratchet:wagoid/commitlint-github-action@v5
