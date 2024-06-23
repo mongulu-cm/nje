@@ -7,30 +7,40 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-
-
-
 </head>
 
-<body>
+<<body>
     <div class="web">
         <nav class="navigation">
-            <div class="vector-parent"><img class="vector-icon" alt="" src="./public/logo.png">
+            <div class="vector-parent">
+                <a href="/">
+                    <img class="vector-icon" alt="Logo" src="./public/logo.png">
+                </a>
                 <div class="currentproject-parent">
-                    <div class="currentproject"><img class="project-icon" alt="" src="./public/projecticon.svg">
-                        <div class="current-projects">Projets actuels</div>
-                    </div>
-                    <div class="peertube-image"><img class="image-5-icon" alt="" src="./public/image-5@2x.png">
-                        <div class="watch-videos">Regarder des vidéos</div><img class="peertube-image-child" alt=""
-                            src="./public/group-4.svg">
-                    </div>
+                    <a href="/nos-projets.html" target="_self">
+                        <div class="currentproject">
+                            <img class="project-icon" alt="" src="./public/projecticon.svg">
+                            <div class="current-projects">Projets actuels</div>
+                        </div>
+                    </a>
+                    <a href="https://peertube.stream/c/mongulu/videos" target="_blank">
+                        <div class="peertube-image">
+                            <img class="image-5-icon" alt="" src="./public/image-5@2x.png">
+                            <div class="watch-videos">Chaîne vidéo</div>
+                            <img class="peertube-image-child" alt="" src="./public/group-4.svg">
+                        </div>
+                    </a>
                     <div class="languagebutton">
-                        <div class="fr-button">
-                            <div class="fr">FR</div>
-                        </div>
-                        <div class="en-button">
-                            <div class="en">EN</div>
-                        </div>
+                        <a href="/index.html">
+                            <div class="fr-button">
+                                <div class="fr">FR</div>
+                            </div>
+                        </a>
+                        <a href="/en_index.html">
+                            <div class="en-button">
+                                <div class="en">EN</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -44,9 +54,9 @@
                         s'appuyer sur des personnes qui se sentent proches de cette communauté et veulent mettre à sa disposition de façon bénévole leurs
                         connaissances, leur savoir-faire numérique.</p>
                 </div>
-            </div><img class="mongulu-image-icon" alt="" src="./public/monguluimage@2x.png">
+            </div><img class="mongulu-image-icon" alt="" src="./public/mongulu-people.webp">
         </section>
-        <section class="objectivesection"><img class="hut-image-icon" alt="" src="./public/hutimage@2x.png">
+        <section class="objectivesection"><img class="hut-image-icon" alt="" src="./public/baka-hut.webp">
             <div class="objectivetext">
                 <div class="textsection">
                     <h2 class="objective">Objectif</h2>
@@ -166,17 +176,18 @@
         <footer class="footer">
             <div class="first-row-link">
                 <div class="links">
-                    <div class="projects"><img class="project-icon" alt="" src="./public/vector1.svg">
-                        <div class="placeholder-link">Projets actuels</div>
-                    </div>
-                    <div class="peertube-logo">
-                        <div class="image-5-parent"><img class="image-5-icon1" alt="" src="./public/image-51@2x.png">
-                            <div class="watch-videos1">Regarder des vidéos</div><img class="peertube-image-child" alt="">
-                        </div>
-                    </div>
-                    <div class="projects"><img class="project-icon" alt="" src="./public/mail.svg">
-                        <div class="placeholder-link">Contact</div>
-                    </div>
+                    <a href="https://www.facebook.com/CollectifMongulu" target="_blank" class="footer-link">
+                        <img class="footer-icon" alt="Facebook Icon" src="./public/facebook.svg">
+                        <div class="placeholder-link">Facebook</div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/92889961/" target="_blank" class="footer-link">
+                        <img class="footer-icon" alt="LinkedIn Icon" src="./public/linkedin.svg">
+                        <div class="placeholder-link">LinkedIn</div>
+                    </a>
+                    <a href="mailto:collectif@mongulu.cm" class="footer-link">
+                        <img class="footer-icon" alt="Mail Icon" src="./public/mail.svg">
+                        <div class="placeholder-link">collectif@mongulu.cm</div>
+                    </a>
                 </div>
             </div>
             <div class="all-rights-reserved">©Tous droits réservés</div>

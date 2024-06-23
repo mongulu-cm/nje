@@ -1,230 +1,190 @@
 <!DOCTYPE html>
-<html lang="fr">
-<style>
-  embed {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  body {
-    background-image: url("logo.jpeg");
-  }
-</style>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description"
-    content="Le collectif mongulu oeuvre au développement des outils numériques pratiques servant la communauté camerounaise en France" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <title>Collectif mongulu</title>
-    <!-- Matomo Tag Manager -->
-    <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['enableHeartBeatTimer', 1]);
-    var _mtm = window._mtm = window._mtm || [];
-    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://matomo.mongulu.cm/js/container_LBA0dsB0.js'; s.parentNode.insertBefore(g,s);
-    </script>
-    <!-- End Matomo Tag Manager -->
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "Organization",
-      "name": "Collectif MONGULU",
-      "url": "https://www.mongulu.cm/",
-      "logo": "https://www.mongulu.cm/logo.jpeg",
-      "areaServed" : {
-          "@type" : "Place",
-          "name" : "France",
-          "sameAs": "https://yago-knowledge.org/resource/France"
-      },
-      "brand": {
-          "@type" : "Organization",
-          "sameAs": "https://github.com/mongulu-cm"
-      },
-      "funder": [
-        {
-          "@type": "Person",
-          "name": "Bill Metangmo",
-          "sameAs": "https://github.com/billmetangmo"
-        },
-        {
-          "@type": "Person",
-          "name": "Fabiola Tagne",
-          "sameAs": "https://github.com/fabiolatagne97"
-        }
-      ],
-      "sameAs": [
-        "https://peertube.stream/c/mongulu/videos"
-      ],
-      "email": "mongulu@framalistes.org",
-      "knowsAbout":[
-        "http://yago-knowledge.org/resource/Cameroun",
-        "http://www.wikidata.org/wiki/Q21198",
-        "http://fr.dbpedia.org/page/Logiciel_libre",
-        "http://www.wikidata.org/wiki/Q60849700"
-      ]
-    }
-</script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
 </head>
 
-<style>
-  #logo {
-    /* width: 150px;
-    height: 100px;
-    position: absolute;
-    top: 100px;
-    left: 70px; */
-    border-radius: 50%;
-    box-shadow: 0 0 5px 5px #888;
-  }
-  .btn-marron {
-    background-color: goldenrod;
-  }
-</style>
-
 <body>
-  <!-- charte mongulu -->
-  <div class="container px-5 pb-4 pt-5" style="background-color: whitesmoke;">
-    <div class="btn-group mr-2 row float-right" role="group" aria-label="First group">
-          <a type="button" class="btn btn-marron" href="index.html">FR</a>
-          <a type="button" class="btn btn-marron" href="en_index.html">EN</a>
-    </div>
-    <div class="container-fluid">
-      <div class="row" >
-        <div class="form-group col-md-4 text-center">
-          <a  href="https://github.com/mongulu-cm"><b>CURRENT PROJECTS</b></a>
+    <div class="web">
+        <nav class="navigation">
+            <div class="vector-parent">
+                <a href="/en_index.html">
+                    <img class="vector-icon" alt="Logo" src="./public/logo.png">
+                </a>
+                <div class="currentproject-parent">
+                    <a href="/our-projects.html" target="_self">
+                        <div class="currentproject">
+                            <img class="project-icon" alt="" src="./public/projecticon.svg">
+                            <div class="current-projects">Current Projects</div>
+                        </div>
+                    </a>
+                    <a href="https://peertube.stream/c/mongulu/videos" target="_blank">
+                        <div class="peertube-image">
+                            <img class="image-5-icon" alt="" src="./public/image-5@2x.png">
+                            <div class="watch-videos">Video Channel</div>
+                            <img class="peertube-image-child" alt="" src="./public/group-4.svg">
+                        </div>
+                    </a>
+                    <div class="languagebutton">
+                        <a href="/en_index.html">
+                          <div class="en-button">
+                              <div class="en">EN</div>
+                          </div>
+                      </a>
+                        <a href="/index.html">
+                            <div class="fr-button">
+                                <div class="fr">FR</div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="header-image">
+            <div class="text-block">
+                <div class="hedertext">
+                    <h1 class="collective-charter">The Mongulu Collective</h1>
+                    <p class="the-mongulu-collective">was born from a desire to promote the creation of free tools adapted to the needs of the Cameroonian community in France. It aims to rely on people who feel close to this community and want to volunteer their knowledge and digital expertise.</p>
+                </div>
+            </div>
+            <img class="mongulu-image-icon" alt="" src="./public/mongulu-people.webp">
+        </section>
+        <section class="objectivesection">
+            <img class="hut-image-icon" alt="" src="./public/baka-hut.webp">
+            <div class="objectivetext">
+                <div class="textsection">
+                    <h2 class="objective">Objective</h2>
+                    <p class="the-collective-takes-container"><span class="the-collective-takes-its-name">The collective takes its name from the hut of the <a class="baka-people"
+                                href="https://images.cnrs.fr/reportage-photo/rep000679" target="_blank"><span
+                                    class="baka-people1">Baka people</span></a>, who are the most numerous representatives of the group commonly called "pygmies". They are known for having preserved the forest as a preferred living space to some extent. The mongulu are the huts they build when they move to change their hunting area during the year. The hut thus contains a set of tools serving the Baka community.</span></p>
+                </div>
+            </div>
+        </section>
+        <div class="vision">
+            <h2 class="vision1">Vision</h2>
+            <p class="to-become-in">To ultimately become an essential player in the digital sector within the Cameroonian community in France, with a strong anchoring in our values.</p>
         </div>
-        <div class="form-group col-md-4 text-center">
-          <a href="mailto:mongulu@framalistes.org"><b>CONTACT(mongulu@framalistes.org)</b></a>
+        <div class="valuessection">
+            <h2 class="title-values">
+                <div class="values">Values</div>
+            </h2>
+            <div class="valuescolumn">
+                <div class="humilitycard"><img class="humility-img-icon" alt="" src="./public/humilityimg.svg">
+                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
+                                class="humility-and-recognition">Humility and recognition in the service of the common good</span><span class="span"> </span></span><span
+                            class="the-collective-takes-its-name"><span class="span">&nbsp;</span></span><span
+                            class="the-collective-takes-its-name"><span>- The "Bakas" are now a marginalized people in Cameroon</span><a
+                                class="baka-people" href="https://www.youtube.com/watch?v=fbr_IAn7HSg"
+                                target="_blank"><span><span class="baka-people1"> (no national identity card, land/hunting area issues) even though they hold an essential place in Cameroon's history. On the one hand, because they are very likely the first inhabitants of Cameroon and on the other hand, due to the central role they have played.</span></span></a></span></p>
+                </div>
+                <div class="humilitycard"><img class="humility-img-icon" alt="" src="./public/empowermentimg.svg">
+                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
+                                class="empowerment-and-emancipation-o1"><span
+                                    class="empowerment-and-emancipation">Empowerment and emancipation of women through technology</span><span class="span1"> </span></span></span><span
+                            class="the-collective-takes-its-name"><span class="span1"><span
+                                    class="blank-line4">&nbsp;</span></span></span><span
+                            class="the-collective-takes-its-name"><span>- In "Baka" society, the construction of mongulu huts is done solely by women. This gives them a certain power in social organization, as the construction technique is unique to them; it is not a simple task separation.</span></span></p>
+                </div>
+                
+            </div>
+            <div class="valuescolumn">
+                <div  style="margin: 20px auto; text-align: center;" class="humilitycard"><img style="margin: 20px auto;" class="humility-img-icon" alt="" src="./public/empowermentimg.svg">
+                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
+                                class="empowerment-and-emancipation-o1"><span
+                                    class="empowerment-and-emancipation">Free Software</span><span class="span1"> </span></span></span><span
+                            class="the-collective-takes-its-name"><span class="span1"><span
+                                    class="blank-line4">&nbsp;</span></span></span><span
+                            class="the-collective-takes-its-name"><span>We subscribe to the values that support free software and believe that it is one of the keys to the digital emancipation of Cameroon. Indeed, we believe that to innovate and adopt digital solutions suited to the Cameroonian context, we need to "appropriate" them (in the etymological sense of the term, meaning to make them our own), which involves the ability to study, understand, and modify them without limits. And only free software, it seems to us, meets these three conditions. This is why all the tools developed within the framework of this collective will be free.</span>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="form-group col-md-4 text-center">
-          <a href="https://peertube.stream/c/mongulu/videos"><b>PEERTUBE CHANNEL</b></a>
+        <div class="approachtitle-parent">
+            <h2 class="approachtitle">
+                <div class="approach">Approach</div>
+            </h2>
+            <div class="image-and-text"><img class="approach-img-icon" alt="" src="./public/approachimg.svg">
+                <p class="in-order-to">To achieve its vision, the collective relies on co-opted members. 
+                    It welcomes all Cameroonians or affiliates with various digital skills. 
+                    Members are then invited to our 2 monthly events:<br><br>
+                        <b>Work & Eat together:</b> Monthly meetings in Paris on the last Friday of the month, allowing us to work in person thanks to teleworking.<br>
+                        <b>Débrief:</b> Virtual meetings on the last Sunday of the month (or postponed if the eve of a public holiday) for project reviews and technology watch.<br>
+                </p>
+            </div>
+            <p> 
+                It is also during the briefing that they can present new projects that will be integrated if they meet the following criteria:
+            </p>
+            <div class="frame-parent">
+                <div class="the-financial-cost-of-setting-wrapper">
+                    <p class="the-financial-cost-container">
+                        <ul class="the-financial-cost-of-setting">
+                            <li class="the-financial-cost">Infrastructure costs must be minimal with financial contribution from the sponsor required if necessary</li>
+                            <li class="the-financial-cost">The code will be delivered under GPL license preferably using free solutions.</li>
+                            <li>The project must specify the skill requirements</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="the-name-of-the-project-must-b-wrapper">
+                    <p class="the-financial-cost-container">
+                        <ul class="the-financial-cost-of-setting">
+                            <li class="the-financial-cost">The project name in Cameroonian dialect, max. 2 terms (e.g., mtchoun-mouh).</li>
+                            <li class="the-financial-cost">Moderate complexity, aiming for a POC in a few months.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <p class="text-block2">
+                <div class="these-criteria-are">Once the project is validated, it joins the Github space.
+                Interested members join, forming a working group. All forms of contributions, whether experience,
+                code, mockups, or advice, are appreciated and highlighted during the monthly meetings.
+                Any project without maintainer contribution for 4 months will be archived.</div>
+            </p>
         </div>
-      </div>
+        <div class="joining-group">
+            <div class="title">
+                <div class="approach">Why join us?</div>
+            </div>
+            <div class="image-and-text1">
+                <div class="joining-group-img"><img class="frame-icon" alt="" src="./public/frame.svg"></div>
+                <div class="textblock-1">
+                    <p class="the-financial-cost-container">
+                        <ul class="the-financial-cost-of-setting">
+                            <li class="the-financial-cost">Contribute to your community by using your skills.</li><br>
+                            <li>Learn new technologies through projects rather than courses.</li><br>
+                            <li>Discover various digital working methods during monthly meetings</li><br>
+                            <li>Expand your network, both personal and professional.</li><br>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="first-row-link">
+                <div class="links">
+                    <a href="https://www.facebook.com/CollectifMongulu" target="_blank" class="footer-link">
+                        <img class="footer-icon" alt="Facebook Icon" src="./public/facebook.svg">
+                        <div class="placeholder-link">Facebook</div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/92889961/" target="_blank" class="footer-link">
+                        <img class="footer-icon" alt="LinkedIn Icon" src="./public/linkedin.svg">
+                        <div class="placeholder-link">LinkedIn</div>
+                    </a>
+                    <a href="mailto:collectif@mongulu.cm" class="footer-link">
+                        <img class="footer-icon" alt="Mail Icon" src="./public/mail.svg">
+                        <div class="placeholder-link">collectif@mongulu.cm</div>
+                    </a>
+                </div>
+            </div>
+            <div class="all-rights-reserved">©All rights reserved</div>
+        </footer>
     </div>
-    <h4 class="mt-5" style="text-align:center"><b>COLLECTIVE CHARTER</b></h4>
-    <div class="row">
-      <div class="col-2" >
-       <img  class="col-12" style="padding: 0px;" src="logo.jpeg" alt="MONGULU" id="logo">
-       <h6 class="mt-2" style="color:#f57f17" >Collectif MONGULU</h6>
-      </div>
-      <div class="col-8" >
-        <h6 class="mr-5 mt-3"><b>Preamble</b></h6>
-        <img  style="float: right"  src="peace-mini.png" width="100" height="100" alt="MONGULU" id="logo2">
-        <p>
-           The "mongulu" collective was born from a desire to promote the creation of free tools adapted to the needs of the Cameroonian community in France.
-           It intends to rely on people who feel close to this community and want to make available to it their knowledge, digital know-how in a voluntary way.
-        </p>
-
-      </div>
-    </div>
-    <h6 class="mt-4 mb-4"><b>Objective</b></h6>
-    <p>
-      The collective takes its name from the hut of the <a href="https://images.cnrs.fr/reportage-photo/rep000679"> Baka people</a>
-      who are the most numerous representatives of the group commonly known as "pygmies." These are known to have conserved
-      to a certain extent the forest as a privileged living space. The mongulu are the huts that they build when they move
-      The mongulu are the huts that they build when they move in order to change their hunting area during the year. The hut thus contains
-      a set of tools serving the Baka community. Inspired by this we want to construct mongulu as a space
-      where each member of the Cameroonian community can pick up and find a useful tool. </p>
-    <h6 class="mt-4 mb-4"><b>Vision</b></h6>
-    <p>
-     To become in a long term, an essential actor of the digital in the Cameroonian community in France with a strong
-     anchorage on our values..
-    </p>
-    <h6 class="mt-4 mb-4"><b>Values</b></h6>
-    <ul>
-      <li class="mb-3">
-        <b>Humility and recognition in the service of the common </b>- the "bakas" are today a people
-        <a href="https://www.youtube.com/watch?v=fbr_IAn7HSg"> marginalized in Cameroon</a> (no national identity card, land/hunting area problem) even though they hold an
-        essential place in the history of Cameroon. On the one hand, because they are most certainly the first inhabitants
-        of Cameroon and on the other hand the central role they played in the <a href="https://www.pasteur.fr/fr/espace-presse/documents-presse/histoire-migratoire-peuples-bantous-comment-genomique-rend-hommage-au-metissage-eclaire-recit"> establishment on the spot </a> of
-        many ethnic groups called "Bantu" ... Using the name of their hut as a collective name is therefore a way to
-        way to pay tribute to them as Cameroonians for what they have done for us and to inscribe ourselves in this logic for
-        in this logic for the duration.
-      </li>
-
-      <li class="mb-3">
-        <b>Empowerment and emancipation of women through technology</b> - in "baka" society the
-        <a href="https://www.canal-u.tv/video/smm/chronique_des_pygmees_baka_construction_de_huttes_mongulu.23336">construction of mongulu </a> which
-        is however the dwelling place is carried out only by women. This gives them a certain power in
-        the social organization, indeed the technique of construction is known only by them, it is not a simple
-        It is not a question of a simple separation of the tasks. This is why one of our founding members is a woman.
-      </li>
-      <li class="mb-3">
-        <b>Free software</b> - we subscribe to the values that support free software and we believe that it
-        is one of the keys to emancipation through digital Cameroon. Indeed, we believe that to innovate and
-        adopt digital solutions to the Cameroonian context, we need to "appropriate" them (in the etymological sense of the term, that is to say, to
-        etymological sense of the word, that is to say, to make them our own), which requires the ability to study, understand and
-        modify them without limit. And only free software, it seems to us, satisfies these 3 conditions. This is why all
-        the tools developed within the framework of this collective will be free.
-      </li>
-    </ul>
-    <h6 class="mt-4 mb-4"><b>Approach</b></h6>
-    <p>
-      In order to fulfill its vision, the collective relies on members who have joined through the recommendation of an existing member. The collective is open to all individuals who are Cameroonian or closely related to this community and possess digital skills such as development, networking and infrastructure, data, artificial intelligence, user experience and interfaces, as well as communication and media, among others. Once this step is completed, members are invited to participate in:
-      </p>
-      <ul>
-        <li><b>Work & Eat Together</b> sessions, which are physical meetings (held in Paris for those in the Île-de-France region) taking place on the last Friday of the month. The idea is to leverage remote work to collaborate in the same space.</li>
-        <li><b>Monthly debrief</b> sessions, which are virtual meetings held on the last Sunday of the month (unless it falls on the day before a public holiday). In such cases, it will be rescheduled to the last public holiday following the Sunday. During these sessions, a review is conducted on ongoing/completed tasks within the projects, as well as technological advancements from the past month.</li>
-      </ul>
-      <p>It is also during this time that a new project can be proposed. The presentation format is completely open, but the project can only be integrated into Mongulu if it meets a set of criteria, including:</p>
-      <ul>
-        <li>The primary intention of the project is not to seek <b>financial profit.</b></li>
-      <li>The name of the project must be in a <b>"dialect"</b> of Cameroon and have a maximum of 2 terms separated by dashes for example mtchoun-mouh.</li>
-      <li>The project must benefit in a <b>"practical" way</b> to the Cameroonian community in France.</li>
-      <li>The level of complexity of the project must not be high and ideally be able to quickly (over a few months) lead to a Proof of Concept (POC).
-        months) lead to a Proof Of Concept (POC).</li>
-      <li>The financial cost of setting up the project (infrastructure) must be <b>minimal</b> as far as possible with
-      mandatory participation of the project owner.</li>
-      <li>The project agrees to have its code passed in <b>GPL license</b> and use preferentially free solutions
-        free solutions if integration is needed.</li>
-      <li>The project must clarify the <b>skill requirements</b> in the collective allowing it to start or
-        develop the project.</li>
-    </ul>
-    <p>
-      These criteria are decided on a consensus basis during the meeting. The project that does not pass this phase has the
-      have the opportunity to retry 3 more times before being definitively rejected.
-    </p>
-    <p>
-      Once the project is accepted, it is integrated into the github space of the mongulu project and members who wish to get involved are integrated into it.
-      members who want to contribute are integrated into the project, they form a working group. All investments are welcome: it can be
-      can be sharing experience on a similar problem, code, designs or even advice. These
-      contributions will be highlighted at the monthly meeting where each working group will present its
-      the developments made. If the maintainer does not contribute to the project during the first 4 months, his project will be automatically archived.
-    </p>
-    <h6 class="mt-4 mb-4"><b>Interest in joining the group</b></h6>
-    <ul class="mr-4">
-      <li>Contribute with your peers to improve your community by directly leveraging your skills</li>
-      <li>Learn new technologies that you would value in a professional project or simply
-        simply out of curiosity by directly participating in a project rather than courses and tutorials</li>
-      <li>Discover other ways/methods of working in digital thanks to monthly meetings where is presented
-        the context of members' work</li>
-      <li>Expand your network whether from a personal or professional point of view (entrepreneurship, reconversion,
-        evolution)</li>
-    </ul>
-    <h6 class="mt-4 mb-4"><b>And in Cameroon?</b></h6>
-    <p>
-      Our focus is mainly on France, however, we plan to be a known and recognized player in the local
-      recognized player in the local digital innovation ecosystem. To do so, we are already in contact with local digital startup incubators such as
-      digital startups such as <a href="https://jabaspace.co/"> JABASPACE </a> or <a href="https://www.activspaces.com"> ACTIVSPACES </a>. One of the
-      focuses we currently have is conducting amazing workshops with the community of these
-      incubators where interested members would present a mongulu or non-mongulu project they have been working on in order to
-      to stimulate debate and questions on the spot. This will also be an opportunity for them to give us this type of presentation
-      presentation to us in order to get feedback from us as well.
-    </p>
-
-  </div>
-
 </body>
 
 </html>
