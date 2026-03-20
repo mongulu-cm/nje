@@ -30,6 +30,8 @@
   --radius-md: 18px;
   --radius-lg: 28px;
   --radius-pill: 999px;
+  --measure: 64ch;
+  --measure-tight: 48ch;
   --space-2xs: 0.35rem;
   --space-xs: 0.6rem;
   --space-sm: 0.9rem;
@@ -54,11 +56,13 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.02rem;
+  line-height: 1.7;
   color: var(--color-text);
   background:
-    radial-gradient(circle at top left, rgba(240, 223, 191, 0.85), transparent 28%),
+    radial-gradient(circle at 12% 12%, rgba(240, 223, 191, 0.92), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(230, 199, 155, 0.52), transparent 24%),
+    radial-gradient(circle at 72% 82%, rgba(214, 179, 130, 0.24), transparent 30%),
     linear-gradient(180deg, #f9f4ed 0%, var(--color-bg) 100%);
 }
 
@@ -99,9 +103,22 @@ h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.08;
   font-family: var(--font-display);
   color: var(--color-text);
+  text-wrap: balance;
+}
+
+h1 {
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  letter-spacing: -0.015em;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 .skip-link {

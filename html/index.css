@@ -145,12 +145,14 @@ main {
 
 .hero__title {
   max-width: 12ch;
-  font-size: clamp(2.6rem, 7vw, 4.9rem);
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  line-height: 0.98;
 }
 
 .hero__lead {
   max-width: 56ch;
-  font-size: 1.12rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
   color: var(--color-text-muted);
 }
 
@@ -248,19 +250,24 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  max-width: var(--measure);
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  max-width: var(--measure-tight);
 }
 
 .section-text {
+  max-width: var(--measure);
   color: var(--color-text-muted);
+  line-height: 1.75;
 }
 
 .section-list {
   display: grid;
   gap: 0.7rem;
+  line-height: 1.7;
   color: var(--color-text-muted);
 }
 
@@ -304,7 +311,9 @@ main {
 .criteria-card h3,
 .join-card h3,
 .project-card h3 {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  max-width: 18ch;
 }
 
 .value-card p,
@@ -313,6 +322,7 @@ main {
 .project-card p,
 .project-card li {
   color: var(--color-text-muted);
+  line-height: 1.7;
 }
 
 .value-card--wide {
@@ -334,7 +344,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  max-width: 60ch;
+  max-width: var(--measure);
+}
+
+.project-card h2 {
+  font-size: clamp(1.55rem, 2.2vw, 2rem);
+  line-height: 1.08;
 }
 
 .project-card {
