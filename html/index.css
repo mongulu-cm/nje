@@ -222,6 +222,15 @@ main {
   align-items: start;
 }
 
+.content-section--center {
+  text-align: center;
+  justify-items: center;
+}
+
+.content-section--center .content-section__body {
+  align-items: center;
+}
+
 .content-section--split .content-section__body {
   padding-top: 0.2rem;
 }
