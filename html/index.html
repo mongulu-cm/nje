@@ -1,202 +1,228 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collectif Mongulu</title>
+    <meta name="description"
+        content="Le collectif Mongulu promeut des outils libres utiles à la communauté camerounaise en France et valorise des projets numériques à impact.">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
-<<body>
-    <div class="web">
-        <nav class="navigation">
-            <div class="vector-parent">
-                <a href="/">
-                    <img class="vector-icon" alt="Logo" src="https://images.mongulu.cm/logo.jpeg">
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="site-header__bar">
+                <a class="brand" href="./index.html" aria-label="Accueil du collectif Mongulu">
+                    <img class="brand__logo" src="https://images.mongulu.cm/logo.jpeg"
+                        alt="Logo du collectif Mongulu">
                 </a>
-                <div class="currentproject-parent">
-                    <a href="/nos-projets.html" target="_self">
-                        <div class="currentproject">
-                            <img class="project-icon" alt="" src="./public/projecticon.svg">
-                            <div class="current-projects">Projets actuels</div>
-                        </div>
+
+                <nav class="site-nav" aria-label="Navigation principale">
+                    <a class="nav-link" href="./nos-projets.html">
+                        <img class="nav-link__icon" src="./public/projecticon.svg" alt="">
+                        <span>Projets actuels</span>
                     </a>
-                    <a href="https://peertube.stream/c/mongulu/videos" target="_blank">
-                        <div class="peertube-image">
-                            <img class="image-5-icon" alt="" src="./public/image-5@2x.png">
-                            <div class="watch-videos">Chaîne vidéo</div>
-                            <img class="peertube-image-child" alt="" src="./public/group-4.svg">
-                        </div>
+                    <a class="nav-link" href="https://peertube.stream/c/mongulu/videos" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="nav-link__icon" src="./public/group-4.svg" alt="">
+                        <span>Chaîne vidéo</span>
                     </a>
-                    <div class="languagebutton">
-                        <a href="/index.html">
-                            <div class="fr-button">
-                                <div class="fr">FR</div>
-                            </div>
-                        </a>
-                        <a href="/en_index.html">
-                            <div class="en-button">
-                                <div class="en">EN</div>
-                            </div>
-                        </a>
+                    <div class="language-switcher" aria-label="Sélecteur de langue">
+                        <a href="./index.html" lang="fr" aria-current="page">FR</a>
+                        <a href="./en_index.html" lang="en">EN</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="contenu">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero__panel">
+                    <p class="eyebrow">Collectif bénévole et libre</p>
+                    <h1 class="hero__title" id="hero-title">Le collectif Mongulu</h1>
+                    <p class="hero__lead">
+                        Nous développons et accompagnons des outils libres pensés pour les usages de la communauté
+                        camerounaise en France, avec une logique de transmission, d’entraide et d’impact concret.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="button-link button-link--primary" href="./nos-projets.html">Découvrir les projets</a>
+                        <a class="button-link button-link--secondary" href="#rejoindre">Pourquoi nous rejoindre</a>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <section class="header-image">
-            <div class="text-block">
-                <div class="hedertext">
-                    <h1 class="collective-charter">Le collectif mongulu</h1>
-                    <p class="the-mongulu-collective">est né d'un désir de promouvoir la
-                        création d'outils libres adaptés aux besoins de la communauté camerounaise en France. Il entend
-                        s'appuyer sur des personnes qui se sentent proches de cette communauté et veulent mettre à sa disposition de façon bénévole leurs
-                        connaissances, leur savoir-faire numérique.</p>
+                <div class="hero__media">
+                    <img src="./public/mongulu-people.webp"
+                        alt="Membres du collectif Mongulu réunis autour d'une table de travail">
                 </div>
-            </div><img class="mongulu-image-icon" alt="" src="./public/mongulu-people.webp">
-        </section>
-        <section class="objectivesection"><img class="hut-image-icon" alt="" src="./public/baka-hut.webp">
-            <div class="objectivetext">
-                <div class="textsection">
-                    <h2 class="objective">Objectif</h2>
-                    <p class="the-collective-takes-container"><span class="the-collective-takes-its-name">Le collectif
-                            prend son nom de la case des <a class="baka-people"
-                                href="https://images.cnrs.fr/reportage-photo/rep000679" target="_blank"><span
-                                    class="baka-people1">peuple Baka</span></a> qui sont les représentants les plus nombreux du groupe communément appelé "pygmées". Ceux-ci sont connus pour avoir conservé dans une certaine mesure la forêt comme espace de vie privilégié. Les mongulu sont les cases qu'ils construisent lorsqu'ils se déplacent pour modifier leur zone de chasse au cours de l'année. La case contient ainsi un ensemble d'outils servant la communauté Baka.</span></p>
-                </div>
-            </div>
-        </section>
-        <div class="vision">
-            <h2 class="vision1">Vision</h2>
-            <p class="to-become-in">Devenir à terme, un acteur incontournable du numérique dans la communauté camerounaise en France avec un fort ancrage sur nos valeurs.</p>
-        </div>
-        <div class="valuessection">
-            <h2 class="title-values">
-                <div class="values">Valeurs</div>
-            </h2>
-            <div class="valuescolumn">
-                <div class="humilitycard"><img class="humility-img-icon" alt="" src="./public/humilityimg.svg">
-                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
-                                class="humility-and-recognition">Humilité et reconnaissance au service du
-                                commun</span><span class="span"> </span></span><span
-                            class="the-collective-takes-its-name"><span class="span">&nbsp;</span></span><span
-                            class="the-collective-takes-its-name"><span>- les "bakas" sont aujourd'hui un peuple </span><a
-                                class="baka-people" href="https://www.youtube.com/watch?v=fbr_IAn7HSg"
-                                target="_blank"><span><span class="baka-people1">marginalisé au
-                                        Cameroun</span></span></a><span> (pas de carte d'identité nationale, problème de terre/zone de chasse) même s'ils détiennent une place essentielle dans l'histoire du Cameroun. D'une part, parce qu'ils sont très certainement les premiers habitants du Cameroun et d'autre part le rôle central qu.</span></span></p>
-                </div>
-                <div class="humilitycard"><img class="humility-img-icon" alt="" src="./public/empowermentimg.svg">
-                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
-                                class="empowerment-and-emancipation-o1"><span
-                                    class="empowerment-and-emancipation">Autonomisation et émancipation des femmes par la technologie</span><span class="span1"> </span></span></span><span
-                            class="the-collective-takes-its-name"><span class="span1"><span
-                                    class="blank-line4">&nbsp;</span></span></span><span
-                            class="the-collective-takes-its-name"><span>- dans la société "baka" la </span><a
-                                class="baka-people"
-                                href="https://www.canal-u.tv/video/smm/chronique_des_pygmees_baka_construction_de_huttes_mongulu.23336"
-                                target="_blank"><span><span class="baka-people1">construction des mongulu
-                                    </span></span></a><span>qui est pourtant le lieu d'habitation est réalisée uniquement par
-                                les femmes. Cela leur donne un certain pouvoir dans l'organisation sociale, en effet la technique
-                                de construction leur est propre, il ne s'agit pas d'une simple séparation des tâches.</span></span></p>
-                </div>
+            </section>
 
-            </div>
-            <div class="valuescolumn">
-                <div  style="margin: 20px auto; text-align: center;" class="humilitycard"><img style="margin: 20px auto;" class="humility-img-icon" alt="" src="./public/empowermentimg.svg">
-                    <p class="humility-and-recognition-container"><span class="the-collective-takes-its-name"><span
-                                class="empowerment-and-emancipation-o1"><span
-                                    class="empowerment-and-emancipation">Le logiciel libre</span><span class="span1"> </span></span></span><span
-                            class="the-collective-takes-its-name"><span class="span1"><span
-                                    class="blank-line4">&nbsp;</span></span></span><span
-                            class="the-collective-takes-its-name"><span>Nous souscrivons aux valeurs qui soutiennent le logiciel libre et nous pensons que celui-ci est l’une des clés de l’émancipation par le numérique du Cameroun. En effet, nous pensons que pour innover et adopter des solutions numériques au contexte camerounais, nous avons besoin de nous les "approprier" (au sens étymologique du terme, c’est-à-dire faire sien) ce qui passe par la capacité à les étudier,les comprendre et les modifier sans limite. Et seul le logiciel libre,il nous semble satisfait à ces 3 conditions. C’est pourquoi tous les outils développés dans le cadre de ce collectif seront libres.</span>
+            <section class="content-section content-section--text-only" aria-labelledby="objectif-title">
+                <div class="content-section__body">
+                    <p class="eyebrow">Origine du nom</p>
+                    <h2 class="section-title" id="objectif-title">Objectif</h2>
+                    <p class="section-text">
+                        Le collectif prend son nom des habitations construites par le peuple Baka, souvent appelées
+                        mongulu. Cette référence exprime une idée simple: bâtir des outils utiles, partageables et
+                        adaptés à la vie réelle de la communauté.
+                    </p>
+                    <p class="section-text">
+                        En savoir plus sur le
+                        <a href="https://images.cnrs.fr/reportage-photo/rep000679" target="_blank"
+                            rel="noopener noreferrer">peuple Baka</a>.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="approachtitle-parent">
-            <h2 class="approachtitle">
-                <div class="approach">Approche</div>
-            </h2>
-            <div class="image-and-text"><img class="approach-img-icon" alt="" src="./public/approachimg.svg">
-                <p class="in-order-to">Pour réaliser sa vision, le collectif s'appuie sur des membres cooptés.
-                    Il accueille tous Camerounais ou affiliés ayant des compétences numériques variées.
-                    Les membres sont alors invités à nos 2 évennements mensuels:<br><br>
-                        <b>Work & Eat together:</b> rencontres mensuelles à Paris le dernier vendredi du mois, permettant de travailler en présentiel grâce au télétravail.<br>
-                        <b>Débrief:</b> rendez-vous virtuels le premier jeudi du mois (ou reporté si veille de jour férié) pour bilan des projets et veille technologique.<br>
-                </p>
-            </div>
-            <p>
-                C'est aussi lors du briefing qu'ils peuvent présenter de nouveaux projets qui seront intégrés s'ils satisfont les critères suivants:
-            </p>
-            <div class="frame-parent">
-                <div class="the-financial-cost-of-setting-wrapper">
-                    <p class="the-financial-cost-container">
-                        <ul class="the-financial-cost-of-setting">
-                            <li class="the-financial-cost">Les coûts d'infrastructure doivent être minimaux avec contribution financière du porteur requise si nécessaire</li>
-                            <li class="the-financial-cost">Le code sera délivré sous licence GPL en utilisant de préférence des solutions libres.</li>
-                            <li>Le projet doit préciser les besoins en compétences</li>
+            </section>
+
+            <section class="content-section content-section--text-only" aria-labelledby="vision-title">
+                <div class="content-section__body">
+                    <p class="eyebrow">Cap stratégique</p>
+                    <h2 class="section-title" id="vision-title">Vision</h2>
+                    <p class="section-text">
+                        Devenir un acteur crédible du numérique pour la communauté camerounaise en France, avec un
+                        ancrage fort dans l’utilité sociale, l’ouverture du code et la circulation des savoirs.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="valeurs-title">
+                <div class="content-section__body">
+                    <p class="eyebrow">Ce qui nous guide</p>
+                    <h2 class="section-title" id="valeurs-title">Valeurs</h2>
+                    <p class="section-text">
+                        Notre travail collectif repose sur des principes explicites: reconnaissance, autonomie, et
+                        attachement au logiciel libre comme condition d’appropriation durable des outils numériques.
+                    </p>
+                </div>
+                <div class="section-grid section-grid--values">
+                    <article class="value-card">
+                        <div class="value-card__icon">
+                            <img src="./public/humilityimg.svg" alt="Icône illustrant l'humilité et la reconnaissance">
+                        </div>
+                        <h3>Humilité et reconnaissance</h3>
+                        <p>
+                            Nous voulons construire avec respect, en gardant visibles les histoires et les personnes
+                            que le numérique oublie trop souvent.
+                        </p>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-card__icon">
+                            <img src="./public/empowermentimg.svg"
+                                alt="Icône illustrant l'autonomisation et la transmission">
+                        </div>
+                        <h3>Autonomisation par la technologie</h3>
+                        <p>
+                            Nous partageons des compétences utiles pour que chacun puisse comprendre les outils,
+                            progresser et agir avec plus d’autonomie.
+                        </p>
+                    </article>
+                    <article class="value-card value-card--wide">
+                        <div class="value-card__icon">
+                            <img src="./public/empowermentimg.svg"
+                                alt="Icône illustrant l'ouverture et le partage du logiciel libre">
+                        </div>
+                        <h3>Logiciel libre</h3>
+                        <p>
+                            Le code doit pouvoir être étudié, adapté et transmis. C’est cette ouverture qui rend les
+                            projets durables et vraiment appropriables.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="approche-title">
+                <div class="content-section__media">
+                    <img src="./public/approachimg.svg"
+                        alt="Icône représentant la coopération entre plusieurs personnes autour d'un objectif commun">
+                </div>
+                <div class="content-section__body">
+                    <p class="eyebrow">Mode de fonctionnement</p>
+                    <h2 class="section-title" id="approche-title">Approche</h2>
+                    <p class="section-text">
+                        Le collectif s’appuie sur des membres cooptés, Camerounais ou proches de la communauté, qui
+                        apportent des compétences numériques variées.
+                    </p>
+                    <ul class="section-list">
+                        <li><strong>Work &amp; Eat together:</strong> rencontre mensuelle à Paris le dernier vendredi du mois.</li>
+                        <li><strong>Débrief:</strong> rendez-vous virtuel le premier jeudi du mois pour faire le point sur les projets.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="criteres-title">
+                <div class="content-section__body">
+                    <p class="eyebrow">Nouveaux projets</p>
+                    <h2 class="section-title" id="criteres-title">Critères d’intégration</h2>
+                    <p class="section-text">
+                        Les nouveaux projets sont présentés collectivement puis intégrés s’ils restent réalistes,
+                        utiles et compatibles avec l’esprit du collectif.
+                    </p>
+                </div>
+                <div class="section-grid cards-two-up">
+                    <article class="criteria-card">
+                        <h3>Contraintes de lancement</h3>
+                        <ul class="section-list">
+                            <li>Des coûts d’infrastructure minimaux, avec contribution du porteur si nécessaire.</li>
+                            <li>Une licence GPL et un recours privilégié à des solutions libres.</li>
+                            <li>Des besoins en compétences clairement formulés.</li>
                         </ul>
-                    </p>
-                </div>
-                <div class="the-name-of-the-project-must-b-wrapper">
-                    <p class="the-financial-cost-container">
-                        <ul class="the-financial-cost-of-setting">
-                            <li class="the-financial-cost">Le nom du projet en dialecte camerounais, max. 2 termes (ex: mtchoun-mouh).</li>
-                            <li class="the-financial-cost">Une complexité modérée, visant un POC en quelques mois.</li>
+                    </article>
+                    <article class="criteria-card">
+                        <h3>Cadre de projet</h3>
+                        <ul class="section-list">
+                            <li>Un nom en dialecte camerounais, en deux termes au maximum.</li>
+                            <li>Une complexité modérée, compatible avec un POC en quelques mois.</li>
+                            <li>Un maintien actif, faute de quoi le projet est archivé après quatre mois d’inactivité.</li>
                         </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" id="rejoindre" aria-labelledby="rejoindre-title">
+                <div class="join-card">
+                    <h2 class="section-title" id="rejoindre-title">Pourquoi nous rejoindre</h2>
+                    <p class="section-text">
+                        Rejoindre Mongulu, c’est contribuer à un travail utile, apprendre avec d’autres et faire
+                        circuler des compétences qui servent vraiment.
                     </p>
                 </div>
-            </div>
-            <p class="text-block2">
-                <div class="these-criteria-are">Une fois le projet validé, il rejoint l'espace Github.
-                Les membres intéressés s'y joignent, formant un groupe de travail. Toutes formes de contributions, qu'il s'agisse d'expérience,
-                de code, de maquettes ou de conseils, sont appréciées et mises en lumière lors des réunions mensuelles.
-                Tout projet sans contribution du mainteneur pendant 4 mois sera archivé.</div>
-            </p>
-        </div>
-        <div class="joining-group">
-            <div class="title">
-                <div class="approach">Pourquoi nous rejoindre ?</div>
-            </div>
-            <div class="image-and-text1">
-                <div class="joining-group-img"><img class="frame-icon" alt="" src="./public/frame.svg"></div>
-                <div class="textblock-1">
-                    <p class="the-financial-cost-container">
-                        <ul class="the-financial-cost-of-setting">
-                            <li class="the-financial-cost">Contribuez à votre communauté en utilisant vos compétences.</li><br>
-                            <li>Apprenez de nouvelles technologies via des projets plutôt que des cours.</li><br>
-                            <li>Découvrez diverses méthodes de travail numérique lors des réunions mensuelles</li><br>
-                            <li>Élargissez votre réseau, tant personnel que professionnel.</li><br>
-                        </ul>
-                    </p>
+                <div class="join-card">
+                    <h3>Ce que le collectif apporte</h3>
+                    <ul class="section-list">
+                        <li>Mettre ses compétences au service de sa communauté.</li>
+                        <li>Apprendre via des projets concrets plutôt que par des parcours abstraits.</li>
+                        <li>Découvrir des méthodes de travail numériques diverses.</li>
+                        <li>Élargir son réseau personnel et professionnel.</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="first-row-link">
-                <div class="links">
-                    <a href="https://www.facebook.com/CollectifMongulu" target="_blank" class="footer-link">
-                        <img class="footer-icon" alt="Facebook Icon" src="./public/facebook.svg">
-                        <div class="placeholder-link">Facebook</div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="footer-links">
+                    <a class="footer-link" href="https://www.facebook.com/CollectifMongulu" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./public/facebook.svg" alt="">
+                        <span>Facebook</span>
                     </a>
-                    <a href="https://www.linkedin.com/company/92889961/" target="_blank" class="footer-link">
-                        <img class="footer-icon" alt="LinkedIn Icon" src="./public/linkedin.svg">
-                        <div class="placeholder-link">LinkedIn</div>
+                    <a class="footer-link" href="https://www.linkedin.com/company/92889961/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./public/linkedin.svg" alt="">
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="mailto:collectif@mongulu.cm" class="footer-link">
-                        <img class="footer-icon" alt="Mail Icon" src="./public/mail.svg">
-                        <div class="placeholder-link">collectif@mongulu.cm</div>
+                    <a class="footer-link" href="mailto:collectif@mongulu.cm">
+                        <img src="./public/mail.svg" alt="">
+                        <span>collectif@mongulu.cm</span>
                     </a>
                 </div>
+                <p class="footer-note">© Collectif Mongulu. Tous droits réservés.</p>
             </div>
-            <div class="all-rights-reserved">©Tous droits réservés</div>
         </footer>
     </div>
-
-
-
-
 </body>
 
 </html>

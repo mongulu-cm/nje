@@ -1,42 +1,120 @@
-body {
-  margin: 0;
-  line-height: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 
 :root {
-  /* fonts */
-  --font-inter: Inter;
-  --font-inherit: inherit;
+  color-scheme: light;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
 
-  /* font sizes */
-  --font-size-sm: 14px;
-  --font-size-6xs: 7px;
-  --font-size-7xl: 26px;
-  --font-size-base: 16px;
-  --font-size-xl: 20px;
-  --font-size-smi: 13px;
+  --color-bg: #f4efe7;
+  --color-surface: #fffaf3;
+  --color-surface-strong: #f0dfbf;
+  --color-surface-muted: #ead5bc;
+  --color-surface-soft: rgba(234, 213, 188, 0.32);
+  --color-surface-soft-strong: rgba(234, 213, 188, 0.5);
+  --color-border: #ceb08d;
+  --color-border-soft: rgba(139, 94, 52, 0.1);
+  --color-border-muted: rgba(139, 94, 52, 0.14);
+  --color-border-strong: rgba(139, 94, 52, 0.22);
+  --color-text: #2e251a;
+  --color-text-muted: #594637;
+  --color-text-soft: #6f5a49;
+  --color-accent: #8b5e34;
+  --color-accent-strong: #6a431d;
+  --color-accent-contrast: #fff9f1;
+  --color-footer: #6f4a29;
+  --color-footer-text: #f8efe0;
+  --color-focus: #b84d10;
+  --shadow-soft: 0 20px 50px rgba(74, 47, 18, 0.08);
+  --shadow-card: 0 10px 30px rgba(74, 47, 18, 0.08);
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --space-2xs: 0.35rem;
+  --space-xs: 0.6rem;
+  --space-sm: 0.9rem;
+  --space-md: 1.3rem;
+  --space-lg: 1.9rem;
+  --space-xl: clamp(2.25rem, 4vw, 3.5rem);
+  --space-2xl: clamp(3rem, 6vw, 5.5rem);
+  --container: min(1120px, calc(100vw - 2rem));
+}
 
-  /* Colors */
-  --color-tan-100: #c4976e;
-  --color-white: #fff;
-  --color-gray: #7a7a7a;
-  --color-black: #000;
-  --color-dimgray-100: #575757;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  /* Gaps */
-  --gap-41xl: 60px;
-  --gap-21xl: 40px;
-  --gap-9xs: 4px;
-  --gap-11xl: 30px;
+html {
+  scroll-behavior: smooth;
+}
 
-  /* Paddings */
-  --padding-xl: 20px;
-  --padding-3xs: 10px;
-  --padding-21xl: 40px;
-  --padding-lgi: 19px;
-  --padding-9xs: 4px;
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(240, 223, 191, 0.85), transparent 28%),
+    linear-gradient(180deg, #f9f4ed 0%, var(--color-bg) 100%);
+}
 
-  /* border radiuses */
-  --br-9xs: 4px;
-  --br-8xs: 5px;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-accent-strong);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: var(--color-focus);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.1;
+  font-family: var(--font-display);
+  color: var(--color-text);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 20;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-strong);
+  color: var(--color-accent-contrast);
+}
+
+.skip-link:focus {
+  top: 1rem;
 }

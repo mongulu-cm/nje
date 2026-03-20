@@ -3,102 +3,138 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-    <title>Our Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our projects | Mongulu Collective</title>
+    <meta name="description"
+        content="Explore the Mongulu Collective projects, their goals, their websites, and their open-source repositories.">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div class="web">
-        <nav class="navigation">
-            <div class="vector-parent">
-                <a href="/en_index.html">
-                    <img class="vector-icon" alt="Logo" src="https://images.mongulu.cm/logo.jpeg">
+    <a class="skip-link" href="#content">Skip to main content</a>
+
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="site-header__bar">
+                <a class="brand" href="./en_index.html" aria-label="Mongulu Collective homepage">
+                    <img class="brand__logo" src="https://images.mongulu.cm/logo.jpeg"
+                        alt="Mongulu Collective logo">
                 </a>
-                <div class="currentproject-parent">
-                    <a href="/nos-projets.html" target="_self">
-                        <div class="currentproject">
-                            <img class="project-icon" alt="Project Icon" src="./public/projecticon.svg">
-                            <div class="current-projects">Current Projects</div>
-                        </div>
+
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a class="nav-link nav-link--active" href="./our-projects.html">
+                        <img class="nav-link__icon" src="./public/projecticon.svg" alt="">
+                        <span>Current projects</span>
                     </a>
-                    <a href="https://peertube.stream/c/mongulu/videos" target="_blank">
-                        <div class="peertube-image">
-                            <img class="image-5-icon" alt="PeerTube Icon" src="./public/image-5@2x.png">
-                            <div class="watch-videos">Video Channel</div>
-                            <img class="peertube-image-child" alt="" src="./public/group-4.svg">
-                        </div>
+                    <a class="nav-link" href="https://peertube.stream/c/mongulu/videos" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="nav-link__icon" src="./public/group-4.svg" alt="">
+                        <span>Video channel</span>
                     </a>
-                    <div class="languagebutton">
-                        <a href="/nos-projets.html">
-                            <div class="fr-button">
-                                <div class="fr">FR</div>
-                            </div>
-                        </a>
-                        <a href="/our-projets.html">
-                            <div class="en-button">
-                                <div class="en">EN</div>
-                            </div>
-                        </a>
+                    <div class="language-switcher" aria-label="Language selector">
+                        <a href="./our-projects.html" lang="en" aria-current="page">EN</a>
+                        <a href="./nos-projets.html" lang="fr">FR</a>
                     </div>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </header>
 
-        <section class="projects-section">
-            <h2>Our Projects</h2>
-            <div class="project">
-                <img src="./public/project-tchoung-te.png" alt="Tchoung-te" class="project-image">
-                <div class="project-details">
-                    <h3>Tchoung-te</h3>
-                    <p>Objective: To allow community members to find associations near them or according to a specific theme by providing an exhaustive and interactive map of all Cameroonian associations in France.</p>
-                    <p>Website: <a href="https://tchoung-te.mongulu.cm/" target="_blank">https://tchoung-te.mongulu.cm/</a> or <a href="https://ai.mongulu.cm" target="_blank">https://ai.mongulu.cm</a> (for the chat version)</p>
-                    <p>Source code: <a href="https://github.com/mongulu-cm/tchoung-te" target="_blank">https://github.com/mongulu-cm/tchoung-te</a></p>
+        <main id="content">
+            <section class="projects-section" aria-labelledby="projects-title">
+                <div class="projects-section__intro">
+                    <p class="eyebrow">Active portfolio</p>
+                    <h1 class="section-title" id="projects-title">Our projects</h1>
+                    <p class="section-text">
+                        Each project addresses a concrete need and remains publicly documented, with a clear emphasis
+                        on openness, reuse, and community value.
+                    </p>
                 </div>
-            </div>
-            <div class="project">
-                <img src="./public/project-manzi-mfa.png" alt="Manzi-mfa" class="project-image">
-                <div class="project-details">
-                    <h3>Manzi-mfa</h3>
-                    <p>Objective: To provide students looking for internships in IT with advice and resources to accelerate their search through an online platform that allows them to book a free 1-hour session with a worker in the relevant sector.</p>
-                    <p>Website: <a href="https://manzi-mfa.mongulu.cm" target="_blank">https://manzi-mfa.mongulu.cm</a></p>
-                    <p>Source code: <a href="https://github.com/mongulu-cm/manzi-mfa" target="_blank">https://github.com/mongulu-cm/manzi-mfa</a></p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="./public/projet-chama.png" alt="Chama" class="project-image">
-                <div class="project-details">
-                    <h3>Chama</h3>
-                    <p>Objective: To provide Cameroonian associations in France with a website template to allow them to quickly establish an online presence, as well as maintenance and hosting provided by us.</p>
-                    <p>Website: <a href="https://aci.assos.mongulu.cm/" target="_blank">https://aci.assos.mongulu.cm/</a> (pilot project with ACI: Association of Cameroonians of Isère)</p>
-                    <p>Source code: <a href="https://github.com/mongulu-cm/chama" target="_blank">https://github.com/mongulu-cm/chama</a></p>
-                </div>
-            </div>
-        </section>
 
-        <footer class="footer">
-            <div class="first-row-link">
-                <div class="links">
-                    <a href="https://www.facebook.com/CollectifMongulu" target="_blank" class="footer-link">
-                        <img class="footer-icon" alt="Facebook Icon" src="./public/facebook.svg">
-                        <div class="placeholder-link">Facebook</div>
+                <div class="project-archive">
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="./public/project-tchoung-te.png"
+                                alt="Preview of Tchoung-te, a project focused on mapping associations">
+                        </div>
+                        <div class="project-card__body">
+                            <h2>Tchoung-te</h2>
+                            <div class="project-card__meta">
+                                <p><strong>Objective:</strong> help community members find Cameroonian associations in
+                                    France by location or topic through an exhaustive and interactive map.</p>
+                                <p><strong>Website:</strong> <a href="https://tchoung-te.mongulu.cm/" target="_blank"
+                                        rel="noopener noreferrer">tchoung-te.mongulu.cm</a> or <a
+                                        href="https://ai.mongulu.cm" target="_blank"
+                                        rel="noopener noreferrer">ai.mongulu.cm</a> for the chat-based version.</p>
+                                <p><strong>Source code:</strong> <a href="https://github.com/mongulu-cm/tchoung-te"
+                                        target="_blank"
+                                        rel="noopener noreferrer">github.com/mongulu-cm/tchoung-te</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="./public/project-manzi-mfa.png"
+                                alt="Preview of Manzi-mfa, a project supporting internship applicants in tech">
+                        </div>
+                        <div class="project-card__body">
+                            <h2>Manzi-mfa</h2>
+                            <div class="project-card__meta">
+                                <p><strong>Objective:</strong> give students looking for IT internships access to
+                                    advice, resources, and a free one-hour exchange with an experienced professional.</p>
+                                <p><strong>Website:</strong> <a href="https://manzi-mfa.mongulu.cm" target="_blank"
+                                        rel="noopener noreferrer">manzi-mfa.mongulu.cm</a></p>
+                                <p><strong>Source code:</strong> <a href="https://github.com/mongulu-cm/manzi-mfa"
+                                        target="_blank"
+                                        rel="noopener noreferrer">github.com/mongulu-cm/manzi-mfa</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__media">
+                            <img src="./public/projet-chama.png"
+                                alt="Preview of Chama, a website template project for Cameroonian associations">
+                        </div>
+                        <div class="project-card__body">
+                            <h2>Chama</h2>
+                            <div class="project-card__meta">
+                                <p><strong>Objective:</strong> provide Cameroonian associations in France with a site
+                                    template, plus maintenance and hosting handled by the collective.</p>
+                                <p><strong>Website:</strong> <a href="https://aci.assos.mongulu.cm/" target="_blank"
+                                        rel="noopener noreferrer">aci.assos.mongulu.cm</a>, a pilot project with ACI.</p>
+                                <p><strong>Source code:</strong> <a href="https://github.com/mongulu-cm/chama"
+                                        target="_blank"
+                                        rel="noopener noreferrer">github.com/mongulu-cm/chama</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="footer-links">
+                    <a class="footer-link" href="https://www.facebook.com/CollectifMongulu" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./public/facebook.svg" alt="">
+                        <span>Facebook</span>
                     </a>
-                    <a href="https://www.linkedin.com/company/92889961/" target="_blank" class="footer-link">
-                        <img class="footer-icon" alt="LinkedIn Icon" src="./public/linkedin.svg">
-                        <div class="placeholder-link">LinkedIn</div>
+                    <a class="footer-link" href="https://www.linkedin.com/company/92889961/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./public/linkedin.svg" alt="">
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="mailto:collectif@mongulu.cm" class="footer-link">
-                        <img class="footer-icon" alt="Mail Icon" src="./public/mail.svg">
-                        <div class="placeholder-link">collectif@mongulu.cm</div>
+                    <a class="footer-link" href="mailto:collectif@mongulu.cm">
+                        <img src="./public/mail.svg" alt="">
+                        <span>collectif@mongulu.cm</span>
                     </a>
                 </div>
+                <p class="footer-note">© Mongulu Collective. All rights reserved.</p>
             </div>
-            <div class="all-rights-reserved">©All rights reserved</div>
         </footer>
-
     </div>
 </body>
 
