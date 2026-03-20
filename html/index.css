@@ -215,6 +215,15 @@ main {
   max-width: 46rem;
 }
 
+.content-section--split {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: start;
+}
+
+.content-section--split .content-section__body {
+  padding-top: 0.2rem;
+}
+
 .content-section--reverse {
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
 }
@@ -289,22 +298,6 @@ main {
   background: transparent;
   border: 1px solid var(--color-border-soft);
   box-shadow: none;
-}
-
-.value-card__icon,
-.join-card__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  border-radius: calc(var(--radius-lg) - 18px);
-  background: var(--color-surface-soft);
-}
-
-.value-card__icon img,
-.join-card__icon img {
-  width: min(190px, 78%);
-  height: auto;
 }
 
 .value-card h3,
