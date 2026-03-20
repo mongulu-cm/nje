@@ -456,6 +456,14 @@ main {
   }
 }
 
+@media (min-width: 901px) {
+  .hero__media {
+    position: sticky;
+    top: clamp(1rem, 5vw, 3rem);
+    align-self: start;
+  }
+}
+
 @media (max-width: 680px) {
   .site-shell {
     gap: var(--space-lg);
@@ -483,5 +491,17 @@ main {
   .footer-links {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready .reveal-target,
+  html.reveal-ready .reveal-target.is-revealed,
+  html.reveal-ready .hero__media.reveal-target,
+  html.reveal-ready .hero__media.reveal-target.is-revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
   }
 }

@@ -7,12 +7,14 @@
     <title>Nos projets | Collectif Mongulu</title>
     <meta name="description"
         content="Découvrez les projets du collectif Mongulu, leurs objectifs, leurs sites et leurs dépôts open-source.">
+    <script>document.documentElement.classList.add("reveal-ready");</script>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     <div class="site-shell">
         <header class="site-header">
@@ -41,8 +43,8 @@
         </header>
 
         <main id="contenu">
-            <section class="projects-section" aria-labelledby="projects-title">
-                <div class="projects-section__intro">
+            <section class="projects-section reveal-target" aria-labelledby="projects-title">
+                <div class="projects-section__intro reveal-target">
                     <p class="eyebrow">Portefeuille actif</p>
                     <h1 class="section-title" id="projects-title">Nos projets</h1>
                     <p class="section-text">
@@ -52,7 +54,7 @@
                 </div>
 
                 <div class="project-archive">
-                    <article class="project-card">
+                    <article class="project-card reveal-target">
                         <div class="project-card__media">
                             <img src="./public/project-tchoung-te.png"
                                 alt="Aperçu du projet Tchoung-te consacré à la cartographie des associations">
@@ -73,7 +75,7 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card reveal-target">
                         <div class="project-card__media">
                             <img src="./public/project-manzi-mfa.png"
                                 alt="Aperçu du projet Manzi-mfa pour l'accompagnement vers les stages IT">
@@ -92,7 +94,7 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card reveal-target">
                         <div class="project-card__media">
                             <img src="./public/projet-chama.png"
                                 alt="Aperçu du projet Chama pour les sites des associations camerounaises">
@@ -136,6 +138,7 @@
             </div>
         </footer>
     </div>
+    <script defer src="./scroll-reveal.js"></script>
 </body>
 
 </html>
