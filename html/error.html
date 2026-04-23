@@ -1,33 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-  embed {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+<html lang="fr">
 
-  body {
-    background-image: url("https://images.mongulu.cm/logo.jpeg");
-  }
-
-  h1 {
-    left: 0;
-    line-height: 200px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-}
-</style>
 <head>
-    <meta charset="UTF-8">
-    <title>Error</title>
-</head>
-<body>
-<h1 align="center" style="color:#FFFFFF" > <b>Erreur 404: Page non trouvé</b></h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erreur 404 | Collectif Mongulu</title>
+  <meta name="description" content="La page demandée est introuvable.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./design-system/tokens.css">
+  <link rel="stylesheet" href="./design-system/base.css">
+  <style>
+    main {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
 
+    .error-card {
+      width: min(620px, 100%);
+      display: grid;
+      gap: 1rem;
+      text-align: center;
+      padding: clamp(1.4rem, 4vw, 2.3rem);
+      border-radius: 1.4rem;
+      border: 1px solid var(--color-border-soft);
+      background: color-mix(in oklch, var(--color-surface) 90%, var(--color-brand-green) 10%);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .error-logo {
+      width: clamp(80px, 12vw, 118px);
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    p {
+      color: var(--color-text-muted);
+      max-width: 48ch;
+      margin: 0 auto;
+    }
+
+    a {
+      justify-self: center;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--color-accent-contrast);
+      background: linear-gradient(
+        130deg,
+        color-mix(in oklch, var(--color-brand-green) 84%, black 16%) 0%,
+        color-mix(in oklch, var(--color-brand-green) 60%, var(--color-brand-earth) 40%) 100%
+      );
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="error-card" aria-labelledby="error-title">
+      <img class="error-logo" src="./logo.svg" alt="Logo du collectif Mongulu">
+      <h1 id="error-title">Erreur 404</h1>
+      <p>La page que vous cherchez n’existe pas ou a été déplacée. Revenez à l’accueil pour continuer.</p>
+      <a href="./index.html">Retour à l’accueil</a>
+    </article>
+  </main>
 </body>
+
 </html>

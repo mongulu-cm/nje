@@ -1,5 +1,5 @@
 .site-header {
-  padding-top: 1rem;
+  padding-top: 0.85rem;
 }
 
 .site-header__bar {
@@ -10,21 +10,24 @@
   gap: var(--space-md);
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--color-border-muted);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--color-surface) 90%, transparent);
+  box-shadow: var(--shadow-soft);
   backdrop-filter: none;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
 }
 
 .brand__logo {
-  width: clamp(128px, 18vw, 182px);
+  width: clamp(66px, 9vw, 92px);
   height: auto;
-  border-radius: 14px;
+  border-radius: 12px;
+  filter: drop-shadow(0 10px 14px color-mix(in oklch, var(--color-brand-green) 20%, transparent));
 }
 
 .site-nav {
@@ -41,18 +44,19 @@
   gap: 0.5rem;
   padding: 0.55rem 0.8rem;
   border-radius: var(--radius-pill);
-  color: var(--color-text);
+  color: var(--color-text-muted);
   text-decoration: none;
   font-weight: 600;
 }
 
 .nav-link:hover {
-  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  background: color-mix(in oklch, var(--color-brand-green) 10%, transparent);
   color: var(--color-accent-strong);
 }
 
 .nav-link--active {
-  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  background: color-mix(in oklch, var(--color-brand-green) 18%, transparent);
+  color: var(--color-text);
 }
 
 .nav-link__icon {
@@ -65,7 +69,7 @@
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-pill);
   padding: 0.2rem;
-  background: var(--color-surface);
+  background: color-mix(in oklch, var(--color-surface) 80%, var(--color-surface-muted) 20%);
 }
 
 .language-switcher a {
@@ -97,7 +101,12 @@
   min-height: 420px;
   padding: clamp(1.5rem, 3vw, 3rem);
   border-radius: var(--radius-lg);
-  background: var(--color-surface);
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in oklch, var(--color-surface) 92%, var(--color-brand-green) 8%) 0%,
+      color-mix(in oklch, var(--color-surface) 85%, var(--color-brand-earth) 15%) 100%
+    );
 }
 
 .eyebrow {
@@ -106,7 +115,7 @@
   width: fit-content;
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--color-accent-strong) 12%, transparent);
+  background: color-mix(in oklch, var(--color-brand-green) 18%, transparent);
   color: var(--color-accent-strong);
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -116,7 +125,7 @@
 
 .hero__title {
   max-width: 12ch;
-  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  font-size: clamp(2.45rem, 6.2vw, 4.85rem);
   line-height: 0.98;
 }
 
@@ -145,13 +154,18 @@
 }
 
 .button-link--primary {
-  background: var(--color-accent-strong);
+  background: linear-gradient(
+    130deg,
+    color-mix(in oklch, var(--color-brand-green) 84%, black 16%) 0%,
+    color-mix(in oklch, var(--color-brand-green) 60%, var(--color-brand-earth) 40%) 100%
+  );
   color: var(--color-accent-contrast);
+  box-shadow: 0 12px 22px color-mix(in oklch, var(--color-brand-green) 24%, transparent);
 }
 
 .button-link--secondary {
   border: 1px solid var(--color-border-strong);
-  background: rgba(255, 250, 243, 0.85);
+  background: color-mix(in oklch, var(--color-surface) 87%, var(--color-brand-earth) 13%);
 }
 
 .hero__media {
@@ -172,7 +186,7 @@
 .content-section {
   padding: clamp(1.4rem, 3vw, 2.1rem);
   border-radius: var(--radius-lg);
-  background: var(--color-surface);
+  background: color-mix(in oklch, var(--color-surface) 92%, var(--color-brand-green) 8%);
 }
 
 .content-section--text-only {
@@ -257,7 +271,7 @@
 .project-card {
   padding: 1rem;
   border-radius: var(--radius-lg);
-  background: transparent;
+  background: color-mix(in oklch, var(--color-surface) 90%, var(--color-brand-earth) 10%);
 }
 
 .project-card__media {
@@ -279,9 +293,9 @@
 .site-footer {
   margin-top: var(--space-lg);
   padding: var(--space-lg) 0;
-  background: transparent;
-  color: var(--color-text-muted);
-  border-top: 1px solid var(--color-border-muted);
+  background: color-mix(in oklch, var(--color-brand-green) 21%, var(--color-brand-earth) 79%);
+  color: var(--color-footer-text);
+  border-top: 1px solid color-mix(in oklch, var(--color-brand-green) 36%, transparent);
 }
 
 .site-footer__inner {
@@ -302,7 +316,7 @@
   align-items: center;
   gap: 0.6rem;
   min-height: 44px;
-  color: var(--color-text-muted);
+  color: var(--color-footer-text);
   text-decoration: none;
   font-weight: 600;
 }
@@ -313,11 +327,11 @@
 }
 
 .footer-link:hover {
-  color: var(--color-accent-strong);
+  color: color-mix(in oklch, var(--color-footer-text) 72%, var(--color-brand-green) 28%);
 }
 
 .footer-note {
-  color: var(--color-text-soft);
+  color: color-mix(in oklch, var(--color-footer-text) 84%, black 16%);
   font-size: 0.95rem;
 }
 
