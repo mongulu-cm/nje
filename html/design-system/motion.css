@@ -1,0 +1,79 @@
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 40;
+  height: 4px;
+  pointer-events: none;
+}
+
+.scroll-progress span {
+  display: block;
+  width: var(--scroll-progress, 0%);
+  height: 100%;
+  background: linear-gradient(90deg, rgba(106, 67, 29, 0.1), var(--color-accent-strong) 50%, rgba(184, 77, 16, 0.88));
+  box-shadow: 0 0 18px rgba(106, 67, 29, 0.28);
+}
+
+.reveal-target {
+  opacity: 1;
+  transform: none;
+}
+
+html.reveal-ready .reveal-target {
+  opacity: 0;
+  transform: translate3d(0, 1.75rem, 0);
+  transition:
+    opacity 720ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 720ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: transform, opacity;
+}
+
+html.reveal-ready .reveal-target.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+html.reveal-ready .hero__media.reveal-target {
+  transform: translate3d(0, 2rem, 0) scale(1.02);
+}
+
+html.reveal-ready .hero__media.reveal-target.is-revealed {
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+html.reveal-ready .hero__panel.reveal-target.is-revealed {
+  transform: translate3d(0, calc(var(--hero-parallax, 0px) * 0.18), 0);
+}
+
+html.reveal-ready .hero__media.reveal-target.is-revealed {
+  transform: translate3d(0, calc(var(--hero-parallax, 0px) * -0.26), 0) scale(1);
+}
+
+html.reveal-ready .content-section.reveal-target.is-revealed,
+html.reveal-ready .projects-section.reveal-target.is-revealed,
+html.reveal-ready .project-card.reveal-target.is-revealed,
+html.reveal-ready .projects-section__intro.reveal-target.is-revealed,
+html.reveal-ready .site-footer__inner.reveal-target.is-revealed,
+html.reveal-ready .value-card.reveal-target.is-revealed,
+html.reveal-ready .criteria-card.reveal-target.is-revealed,
+html.reveal-ready .join-card.reveal-target.is-revealed {
+  transform: translate3d(0, calc(var(--section-parallax, 0px) * 0.08), 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.reveal-ready .reveal-target,
+  html.reveal-ready .reveal-target.is-revealed,
+  html.reveal-ready .hero__media.reveal-target,
+  html.reveal-ready .hero__media.reveal-target.is-revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
