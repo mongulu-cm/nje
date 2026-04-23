@@ -290,6 +290,54 @@
   color: var(--color-text);
 }
 
+.bureau-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.65rem;
+  padding: 1.1rem;
+  border-radius: calc(var(--radius-lg) - 10px);
+  background: color-mix(in oklch, var(--color-surface) 92%, var(--color-brand-green) 8%);
+  border: 1px solid var(--color-border-soft);
+}
+
+.member-photo {
+  width: 94px;
+  height: 94px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid color-mix(in oklch, var(--color-brand-green) 38%, transparent);
+  box-shadow: 0 10px 18px color-mix(in oklch, var(--color-brand-earth) 16%, transparent);
+}
+
+.member-role {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+  font-weight: 700;
+}
+
+.member-name {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.member-name:hover {
+  color: var(--color-accent-strong);
+}
+
 .site-footer {
   margin-top: var(--space-lg);
   padding: var(--space-lg) 0;

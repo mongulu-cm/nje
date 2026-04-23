@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="MN">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="oklch(0.72 0.16 132)"/>
+      <stop offset="100%" stop-color="oklch(0.52 0.10 58)"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="url(#g)"/>
+  <circle cx="80" cy="66" r="28" fill="oklch(0.96 0.02 110 / 0.88)"/>
+  <path d="M31 132c5-24 24-39 49-39s44 15 49 39" fill="oklch(0.96 0.02 110 / 0.88)"/>
+  <text x="80" y="151" text-anchor="middle" fill="oklch(0.30 0.03 90 / 0.75)" font-size="9" font-family="Arial, sans-serif">MN</text>
+</svg>
